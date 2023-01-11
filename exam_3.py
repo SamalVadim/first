@@ -25,7 +25,7 @@
 #             x.append(0)
 #     return x
 #
-# a = [1,2,100,0,3,4,5,0]
+# a = [0,0,0]
 # print(func(a))
 
 
@@ -54,8 +54,8 @@
 #         print(z.index(x, (z.index(x)) + 1))
 #     else:
 #         print('None')
-#
-#
+
+
 # func('happy new year', ' ')
 
 # 3 Создайте класс IceCream (для заказа мороженого с добавкой или без),
@@ -114,22 +114,19 @@
 # Метод dig должен выводить строку "Рыть землю".
 # в классах Cat и Dog переопределите метод make_a_sound() базового класса Animal.
 # (Cat: make_a_sound() -> '<...>', Dog: make_a_sound() -> '<...>')
-# class Animal:
-#     @classmethod
-#     def make_a_sound(cls):
-#         print("Издает звук")
-#
-# class Cat(Animal):
-#     @classmethod
-#     def scratch(cls):
-#         print("Царапать мебель")
-#
-# class Dog(Animal):
-#     @classmethod
-#     def dig(cls):
-#         print("Рыть землю")
-# vas = Cat()
-# vas.make_a_sound()
-#
-# bob = Dog()
-# bob.make_a_sound()
+class Animal:
+    def make_a_sound(self):
+        print("Издает звук")
+
+class Cat(Animal):
+    def scratch(self):
+        print("Царапать мебель")
+
+class Dog(Animal):
+    def dig(self):
+        print("Рыть землю")
+vas = Cat()
+vas.make_a_sound()
+
+bob = Dog()
+bob.make_a_sound()
